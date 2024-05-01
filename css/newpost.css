@@ -1,0 +1,129 @@
+.font{
+  font-family: "Schibsted Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+  font-size:medium;
+}
+.parent-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* 确保 navbar 固定在顶部 */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* 高 z-index 确保 navbar 在其他内容上方 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-brand {
+  width: 90%;
+  text-align: center;
+}
+
+.navbar-toggler.me-auto {
+  background-color: transparent; /* 无背景色 */
+  border: none; /* 无边框 */
+  pointer-events: none; /* 禁止点击 */
+  opacity: 0.5; /* 降低透明度，使其看起来像是禁用的 */
+}
+
+/* 旋转 */
+.plus-icon {
+  transform: rotate(45deg);
+}
+
+/* 为 body 设置足够的上边距，以防止内容被遮挡 */
+body {
+  padding-top: 70px; /* 根据实际的 navbar 高度调整这个值 */
+}
+
+/* 调整发帖表单的样式，确保它居中并有足够的间距 */
+#postForm {
+  margin-top: 20px; /* 这个值根据需要进行调整 */
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%; /* 或者根据设计稿的宽度来设置 */
+  color: #faf9f0;
+}
+
+/* 发帖输入框的样式 */
+#titleInput {
+  border: none;
+  border-bottom: 1px solid #777e90; /* 灰色分割线 */
+  margin-bottom: 20px; /* 分割线和文本区域之间的间隔 */
+  width: 100%; /* 完整宽度 */
+}
+
+/* insert img */
+.icon{
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* 文本区域的样式 */
+#contentInput {
+  border: none;
+  width: 100%; /* 完整宽度 */
+  min-height: 600px; /* 设置最小高度 */
+}
+
+#titleInput:focus,
+#contentInput:focus {
+  outline: none;
+}
+
+#postButton {
+  position: fixed; /* 固定位置 */
+  bottom: 0; /* 在底部 */
+  z-index: 10; /* 确保按钮在其他内容之上 */
+  left: 50%;
+  transform: translateX(-50%); /* 这会将按钮居中于屏幕底部 */
+  font-size: 15px;
+  background-color: #333;
+  color: white;
+  border: 0px;
+  min-width: 312px;
+  height: 48px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 90px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+}
+
+#postButton:hover {
+  background-color: #ffb11b;
+  color: white;
+}
+
+/* 报错信息 */
+#postForm {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+#titleInput,
+#contentInput {
+  width: 100%; /* 让输入框占满宽度 */
+}
+
+#postButton {
+  width: auto; /* 设置按钮的初始宽度 */
+  padding: 10px 20px; /* 给按钮增加一些内间距 */
+}
+
+.alert {
+  text-align: center; /* 居中文本 */
+  border-radius: 5px; /* 轻微圆角 */
+  margin-top: 20px; /* 在消息和其他表单元素之间添加一些间隙 */
+}

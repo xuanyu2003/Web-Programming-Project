@@ -1,0 +1,298 @@
+.font{
+  font-family: "Schibsted Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+  font-size:medium;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: Poppins, sans-serif;
+  width: 100%;
+  height: auto;
+  display: flex; 
+  justify-content: center; 
+}
+
+body {
+  padding-top: 60px;
+}
+
+@media (max-width: 979px) {
+  body {
+    padding-top: 0px;
+  }
+}
+
+/*------navbar------*/
+.nav-bottom {
+  margin-top: 90%;
+}
+.navbar {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none; /* 移除点击后的边框阴影 */
+}
+
+.navbar-toggler:hover {
+  background-color: #e2e1d6;
+}
+
+.navbar-toggler svg rect {
+  fill: #ffb11b;
+}
+
+.btn-close:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-close:hover {
+  background-color: #e2e1d6;
+}
+
+#logo {
+  color: #ffb11b;
+}
+
+/*------sidebar------*/
+svg path:nth-of-type(2) {
+fill: #ffb11b;
+}
+
+svg path:nth-of-type(3) {
+fill: #ffb11b;
+}
+
+svg path:first-of-type {
+fill: #ffb11b;
+}
+
+svg {
+color: #ffb11b;
+}
+
+#profile-email {
+margin-top: 10px;
+}
+
+.nav-item-flex svg {
+margin-right: 5px;
+margin-left: -3px;
+}
+
+#mypost {
+margin-top: 20px;
+margin-right: 5px;
+}
+
+.nav-link:hover {
+color: #ffb11b;
+}
+
+hr {
+color: #ffb11b;
+margin-top: 3px;
+width: calc(100% - 50px);
+}
+
+#logout-display {
+position: fixed;
+bottom: 30px;
+}
+
+#mypost,
+#logout-display {
+display: flex;
+align-items: center; /* 垂直居中对齐 */
+}
+
+/*-—————————————————————————post style—————————————————————————-*/
+#post-section {
+  background-color: #faf9f0;
+  padding: 20px;
+  border: 1px solid #ece7c0;
+  border-radius: 10px; 
+}
+
+#post-section:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+#post-section {
+  display: flex;
+  flex-direction:column;
+  justify-content: center; 
+  box-sizing: border-box;
+  margin:60px 40px 40px 40px;
+  padding:60px;
+}
+.postWithEdit{
+  display:flex;
+  justify-content: space-between;
+  }
+
+  @media (max-width: 979px) {
+    #post-section {
+      margin: 80px 20px 20px 20px;
+      padding: 20px;
+    }
+  }
+  /* —————————————————————— post detail —————————————————————— */
+.postDetailContainer{
+  /* margin-bottom: 10px; */
+  margin-right: 20px;
+}
+
+/* 帖子标题样式 */
+.post-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* 帖子作者样式 */
+.post-author {
+  font-style: italic;
+  color: #999;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+/* 帖子内容样式 */
+.post-content {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* 保存时间样式 */
+.post-saved {
+  color: #999;
+  font-size: 14px;
+  margin-bottom:50px;
+}
+
+.post-image {
+  width: 300px;
+  margin-bottom: 50px;
+  border-radius: 8px
+}
+
+.titleWithIcons {
+display:flex;
+flex-direction:row;
+justify-content: space-between; 
+}
+
+/* —————————————————————— post edit & delete —————————————————————— */
+.edit-container {
+  display: flex;
+  flex-direction: column;  /* 垂直排列 */
+  align-items: center;     /* 水平居中 */
+}
+
+.edit-section {
+display: flex;
+flex-direction: row;
+margin-bottom: 8px;
+justify-content:flex-end;
+}
+
+.icon{
+cursor: pointer;
+}
+
+#edit-icon, #delete-icon{
+margin:5px;
+}
+/* —————————————————————— edit style —————————————————————— */
+/*输入框样式现在模仿的bootstrap的样式*/
+/* 自定义输入框样式 */
+.edit-title {
+width: 100%;
+padding: 0.5rem;
+margin-bottom: 1rem;
+border: 1px solid #ced4da; /* Bootstrap 的灰色边框 */
+border-radius: 5px;
+font-size: 16px;
+background-color: #FFFDFE;
+}
+
+/* 自定义文本框样式 */
+.edit-content {
+width: 100%;
+padding: 0.5rem;
+margin-bottom: 1rem;
+border: 1px solid #ced4da; /* Bootstrap 的灰色边框 */
+border-radius: 5px;
+font-size: 16px;
+background-color: #FFFDFE;
+}
+
+.edit-title:focus,
+.edit-content:focus {
+border-color: #007bff;
+outline:none;
+box-shadow: 0 0 0 0.3rem rgba(0, 123, 255, 0.25);
+}
+
+button.btn.btn-primary {
+  display: block;
+  margin-bottom:40px !important;
+}
+
+
+/* —————————————————————— like style —————————————————————— */
+.like-button{
+cursor: pointer;
+}
+
+/* ————————————————————comment style ——————————————————————*/
+.comment{
+border-top:#ffb11b solid 1px;
+}
+
+.comment-info{
+margin-top: 15px;
+color: #666;
+}
+
+.comment-input {
+margin-top: 20px;
+margin-bottom: 1dvh;
+}
+
+.btn.btn-primary {
+height: 30px;
+background-color: #ffb11b;
+border:none;
+font-size:12px;
+margin-bottom:20px;
+}
+
+.infoWithDeleteIcon{
+display: flex;
+justify-content: space-between;
+}
+
+#delete-icon {
+width:18px;
+fill:#ffb11b;
+cursor: pointer;
+}

@@ -1,0 +1,114 @@
+.font{
+  font-family: "Schibsted Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+  font-size:medium;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  backdrop-filter: blur(10px); 
+  margin: 0;
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.img_homepage {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 100%; 
+}
+
+.recover-password {
+  display: flex;
+  justify-content: center; 
+  text-align: center; 
+  width: 100%; 
+  margin-top: 10px;
+}
+
+.recover-password a {
+  color: #A2A2A2;
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (max-width: 499px){
+.container-fluid {
+  padding: 1rem;
+  background-image: none;
+  background-color: #FFFDFE; 
+}
+}
+
+@media (min-width: 500px) {
+  body {
+    background-image: url('/img/demo4.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; 
+  }
+  .container-fluid {
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.2); /* 设置白色背景及60%的透明度 */
+    backdrop-filter: blur(4px);
+  }
+
+.login-card {
+  background-color: #FFFDFE; 
+  padding: 48px; 
+  border-radius: 1rem; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  max-width: 400px;
+  margin: auto;
+}
+}
+
+
+.homepage-title {
+  color: #FFB11B;
+  margin-top: 24px; 
+  margin-bottom: 48px; 
+  font-family: Poppins, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.btn, .btn-primary, .btn-secondary {
+  border: 0px;
+  background-color: #333; 
+  width: 312px;
+  height: 48px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 90px;
+  margin-bottom: 12px;
+  display: flex;        
+  align-items: center;  
+  justify-content: center;  
+  text-align: center;  
+  padding: 0;          
+}
+
+.btn:hover {
+  background-color: #FFB11B; 
+  color: white; 
+}
+
+

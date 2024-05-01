@@ -1,0 +1,158 @@
+### Get posts 
+GET http://localhost:3001/
+
+### Login with valid credentials 
+POST http://localhost:3001/user/login 
+Content-Type: application/json
+
+{
+"username":"user1", 
+"password":"password"
+}
+
+### Login with invalid credentials 
+POST http://localhost:3001/user/login 
+Content-Type: application/json
+
+{
+"username":"user1", 
+"password":"wrongpassword"
+}
+
+
+# 6.Apr Modification:
+### Registration 
+POST http://localhost:3001/user/signup
+Content-Type: application/json
+
+{
+"username":"client.rest",
+"email":"client.rest@test.com",
+"password":"password"
+}
+
+# 7.Apr Modification:
+### test email exsits
+POST http://localhost:3001/user/check-email
+Content-Type: application/json
+
+{
+"email":"user2@test.com"
+}
+
+### test email doesn't exsits 
+POST http://localhost:3001/user/check-email
+Content-Type: application/json
+
+{
+"email":"wronguser@test.com"
+}
+
+### test username exsits
+POST http://localhost:3001/user/check-username
+Content-Type: application/json
+
+{
+"username":"user1"
+}
+
+### test username doesn't exsits 
+POST http://localhost:3001/user/check-username
+Content-Type: application/json
+
+{
+"username":"wronguser"
+}
+
+### test password can be changed
+POST http://localhost:3001/user/reset-password
+Content-Type: application/json
+
+{
+"email":"user1@test.com",
+"newPassword":"password"
+}
+
+# 9.Apr modification:
+
+### test mypost
+POST http://localhost:3001/post/myPost
+Content-Type: application/json
+
+{
+    "username": "user1"
+}
+
+### test post details
+GET http://localhost:3001/post/3
+
+### test add a new post
+POST http://localhost:3001/post/create
+Content-Type: application/json
+
+{
+    "title": "this is a new post from client.rest",
+    "content": "this is a new content from client.rest",
+    "username": "user1"
+}
+
+### test edit post
+POST http://localhost:3001/post/editPost
+Content-Type: application/json
+
+{
+    "title": "edit title from client.rest",
+    "content": "edit content from client.rest",
+    "postId": 1,
+    "username": "user1"
+}
+
+### test delete post
+POST http://localhost:3001/post/deletePost
+Content-Type: application/json
+
+{
+    "postId": 2,
+    "username": "user1"
+}
+
+### test insert comment
+POST http://localhost:3001/post/insertComment
+Content-Type: application/json
+
+{
+    "postId": 1,
+    "text": "this is a new comment from client.rest",
+    "username": "user1"
+}
+
+### test edit comment
+POST http://localhost:3001/post/editComment
+Content-Type: application/json
+
+{
+    "postId": 1,
+    "username": "user1",
+    "commentId": 3,
+    "text": "edit comment from client.rest"
+    
+}
+
+### test delete comment
+POST http://localhost:3001/post/deleteComment
+Content-Type: application/json
+
+{
+    "postId": 1,
+    "username": "user1",
+    "commentId": 1
+}
+
+### test homepost
+GET  http://localhost:3001/post/homepost
+
+Content-Type: application/json
+{
+
+}
+

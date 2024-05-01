@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,195;1,9..40,195&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+   
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="/css/login.css" rel="stylesheet">
+</head>
+
+<body class="font">
+ 
+  <div class="container-fluid">
+    <div class="login-card">
+    <!--login form-->
+    <form class="login-form">
+    
+      <!--title-->
+      <h2 class="login-title">Welcome back!</h2>
+
+      <!--greeting-->
+      <p id="greeting">🎵 Feel the good vibe today</p>
+
+      <!--input fields-->
+      <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" class="form-control" id="username" placeholder="Type your username" maxlength="20">
+      </div>
+
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Type your password">
+        <label id="error" class="error-message"></label>    
+      </div>
+
+      <!--forget password-->
+        <div class="forget-password">
+          <p><a href="reset1.html">Forget password?</a></p>
+        </div>
+
+      <!--login button-->
+      <button type="submit" class="btn btn_login" id="login-button">Log in</button>
+     
+      <!--text-->
+      <div class="tips-text">
+        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+       </div>
+      </div>
+    </form>
+
+  </div>
+
+  <!--js file-->
+  <script type="module" src="/js/login.js"></script>
+  <script type="module" src="./js/user.js"></script>
+</body>
+</html>

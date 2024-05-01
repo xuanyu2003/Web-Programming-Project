@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,195;1,9..40,195&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+   
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="/css/newpost.css" rel="stylesheet" />
+    <title>new post</title>
+  </head>
+
+  <body class="font">
+    <!-- navbar -->
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <!-- toggler  -->
+
+        <button
+          class="navbar-toggler me-auto"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+        </button>
+
+        <a class="navbar-brand me-auto" href="/home.html "id="logo" >
+          <img src="img/logo.png" alt="logo" width="40px">
+        </a>
+
+        <button
+          class="navbar-toggler mu-auto"
+          type="button"
+          onclick="location.href='home.html';"
+        >
+          <svg
+            class="plus-icon"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect y="7" width="16" height="2" fill="#777E90" />
+            <rect
+              x="7"
+              y="16"
+              width="16"
+              height="2"
+              transform="rotate(-90 7 16)"
+              fill="#777E90"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <form id="postForm">
+      <input type="text" id="titleInput" placeholder="Title here" required />
+      <svg t="1713914864543" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7295" width="25" onclick="document.getElementById('fileInput').click();"><path d="M867.90864 574.538232V257.779543a50.844091 50.844091 0 0 0-50.844092-50.844091h-610.129096a50.844091 50.844091 0 0 0-50.844092 50.844091v499.797418l430.141013-257.779543a152.532274 152.532274 0 0 1 157.108243 0z m0 118.466733l-177.445879-106.264151a50.844091 50.844091 0 0 0-50.844092 0L254.220457 817.064548h562.844091a50.844091 50.844091 0 0 0 50.844092-50.844091z m-660.973188-587.757696h610.129096a152.532274 152.532274 0 0 1 152.532274 152.532274v508.440914a152.532274 152.532274 0 0 1-152.532274 152.532274h-610.129096a152.532274 152.532274 0 0 1-152.532274-152.532274v-508.440914a152.532274 152.532274 0 0 1 152.532274-152.532274z m127.110228 355.90864a76.266137 76.266137 0 1 1 76.266137-76.266137 76.266137 76.266137 0 0 1-76.266137 76.266137z" fill="#ffb11b" p-id="7296"></path></svg>
+      <input type="file" id="fileInput" style="display:none;" accept="image/*" onchange="handleFiles(this.files)">
+      <textarea id="contentInput" placeholder="content here" required></textarea>
+      <button type="submit" id="postButton">Post</button>
+      <div id="error" class="alert alert-danger" style="display: none">
+        Please fill out this field.
+      </div>
+    </form>
+
+    <script type="module" src="./js/newpost.js"></script>
+    <script type="module" src="./js/user.js"></script>
+  </body>
+  
+</html>

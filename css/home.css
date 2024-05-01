@@ -1,0 +1,287 @@
+.font{
+  font-family: "Schibsted Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+  font-size:medium;
+}
+body {
+  background-color: #fffdfe;
+}
+.image {
+  text-align: left;
+}
+
+.carousel {
+  width: 100%;
+}
+
+#logo {
+  color: #ffb11b;
+}
+
+/*------navbar------*/
+.nav-bottom {
+  margin-top: 90%;
+}
+.navbar {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none; /* 移除点击后的边框阴影 */
+}
+
+.navbar-toggler:hover {
+  background-color: #e2e1d6;
+}
+
+.navbar-toggler svg rect {
+  fill: #ffb11b;
+}
+
+.btn-close:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-close:hover {
+  background-color: #e2e1d6;
+}
+
+svg path:nth-of-type(2) {
+  fill: #ffb11b;
+}
+
+svg path:nth-of-type(3) {
+  fill: #ffb11b;
+}
+
+svg path:first-of-type {
+  fill: #ffb11b;
+}
+
+svg {
+  color: #ffb11b;
+}
+
+#profile-email {
+  margin-top: 10px;
+  font-size: 18x;
+}
+
+.nav-item-flex svg {
+  margin-right: 5px;
+  margin-left: -3px;
+}
+
+#mypost {
+  margin-top: 20px;
+}
+
+.nav-link:hover {
+  color: #ffb11b;
+}
+
+hr {
+  color: #ffb11b;
+  margin-top: 3px;
+  width: calc(100% - 50px);
+}
+
+#logout-display {
+  position: fixed;
+  bottom: 30px;
+}
+
+#mypost,
+#logout-display {
+  display: flex;
+  align-items: center; /* 垂直居中对齐 */
+}
+
+
+/* 加号旋转 45 度 */
+.plus-icon {
+  transform: rotate(90deg);
+}
+
+/*-------banner-------*/
+
+.carousel-item img {
+  height: 650px; 
+  width: 100%;   
+  object-fit: cover; /* 覆盖整个元素区域，必要时进行裁剪 */
+  object-position: center; 
+}
+
+@media (max-width: 979px) {
+  .carousel-item img {
+    height: 300px; 
+    object-position: center;
+  }
+}
+
+
+.carousel-control-prev:hover {
+  background: linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
+}
+
+.carousel-control-next:hover {
+  background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
+}
+
+
+.carousel-caption h3 {
+  font-size: 48px; 
+  font-weight: bold; 
+  text-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption p {
+  font-size: 18px; 
+  text-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 979px) {
+  .carousel-caption p {
+      display: none; /* 在小屏幕上隐藏段落文本 */
+  }
+  .carousel-caption h3 {
+      font-size: 20px; 
+  }
+}
+
+
+
+/*------post-card------*/
+/* .post-card {
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: 1px solid #ece7c0;
+  border-radius: 10px;
+  padding: 25px 35px 15px;
+  background-color: #faf9f0;
+  transition: box-shadow 0.3s ease-in-out;
+  width: calc(100% - 16px); 
+  max-width: auto;
+  height: auto; 
+  top: auto;
+  left: auto; 
+  margin-left: 8px; 
+  margin-right: 8px; 
+  position: relative;
+} */
+
+.post-card {
+  display: flex;
+  flex-direction: row; /* default to row */
+  align-items: center; /* aligns items vertically center in row layout */
+  justify-content: space-between; /* space between elements in row */
+  padding: 25px 35px 15px;
+  border-radius: 10px;
+  background-color: #faf9f0;
+  margin-bottom: 20px;
+  border: 1px solid #ece7c0;
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.post-card:hover {
+  box-shadow: 0 8px 10px rgba(73, 50, 9, 0.1);
+}
+
+
+
+/*------postcard-author------*/
+.post-title {
+  /* 标题样式 */
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.author-info {
+  /* 作者信息容器样式 */
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: -8px;
+}
+
+.author-avatar {
+  /* 作者头像样式 */
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-top: -20px;;
+  margin-left: 2px;
+}
+
+.author-details {
+  /* 作者名字和发布时间容器样式 */
+  margin-left: 8px; 
+}
+
+.author-name{
+  margin-bottom: 2px;
+}
+.author-name, .post-time {
+  /* 作者名字和发布时间样式 */
+  font-size: 0.75rem;
+  color: grey;
+  display: block; /* 确保名字和时间显示在不同行 */
+}
+
+
+/*------postcard-img------*/
+/* .post-image {
+  position: absolute; 
+  top: 50%; 
+  right: 35px;
+  transform: translateY(-50%); 
+  width: 20%; 
+  height: auto; 
+  max-height: 150px;
+  max-width: 200px; 
+} */
+.post-content {
+  margin-right: 25px; 
+}
+
+  .post-image {
+    width: 200px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    object-fit: cover; /* Ensures the image covers the full area of the element, cropping as necessary */
+    border-radius: 8px; /* Optional: adds rounded corners to the image */
+  }
+
+  @media screen and (max-width: 900px) {
+    .post-card {
+      margin-bottom: 10px;
+      padding: 20px;
+    }
+    .post-title {
+      font-size: 1.1rem;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+   .post-content {
+      font-size: 0.7rem;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+    .author-name, .post-time {
+      font-size: 0.6rem;
+  }
+  
+  .post-image {
+    width: 125px;  /* Smaller width for smaller screens */
+    height: 100px;  /* Smaller height for smaller screens */
+  }
+  
+  }

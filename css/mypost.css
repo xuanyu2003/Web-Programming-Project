@@ -1,0 +1,178 @@
+.font{
+  font-family: "Schibsted Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
+  font-size:medium;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*------navbar------*/
+.nav-bottom {
+  margin-top: 90%;
+}
+.navbar {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none; /* 移除点击后的边框阴影 */
+}
+
+.navbar-toggler:hover {
+  background-color: #e2e1d6;
+}
+
+.navbar-toggler svg rect {
+  fill: #ffb11b;
+}
+
+.btn-close:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-close:hover {
+  background-color: #e2e1d6;
+}
+
+#logo {
+  color: #ffb11b;
+}
+
+/*------sidebar------*/
+svg path:nth-of-type(2) {
+  fill: #ffb11b;
+}
+
+svg path:nth-of-type(3) {
+  fill: #ffb11b;
+}
+
+svg path:first-of-type {
+  fill: #ffb11b;
+}
+
+svg {
+  color: #ffb11b;
+}
+
+#profile-email {
+  margin-top: 10px;
+}
+
+.nav-item-flex svg {
+  margin-right: 5px;
+  margin-left: -3px;
+}
+
+#mypost {
+  margin-top: 20px;
+  margin-right: 5px;
+}
+
+.nav-link:hover {
+  color: #ffb11b;
+}
+
+hr {
+  color: #ffb11b;
+  margin-top: 3px;
+  width: calc(100% - 50px);
+}
+
+#logout-display {
+  position: fixed;
+  bottom: 30px;
+}
+
+#mypost,
+#logout-display {
+  display: flex;
+  align-items: center; /* 垂直居中对齐 */
+}
+/*------post card------*/
+#postContainer {
+  margin: 60px 20px 0 20px;
+  border: none;
+}
+
+.card-body {
+  background-color: #faf9f0;
+  border: 1px solid #ece7c0;
+  padding: 25px;
+  margin-top: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.card-body:hover {
+  box-shadow: 0 8px 10px rgba(73, 50, 9, 0.1);
+}
+
+.card-title {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.card-text{
+  margin-right: 10px;
+}
+
+.card-time{
+  font-size: 0.8rem;
+  color: grey;
+  margin-top: 18px;
+  margin-bottom: 5px;
+}
+
+.card-image {
+  width: 150px; /* Fixed width */
+  height: 100px; /* Fixed height */
+  object-fit: cover; /* Ensures the image covers the full area of the element, cropping as necessary */
+  border-radius: 8px; /* Optional: adds rounded corners to the image */
+  margin: auto 0; /* Center the image vertically */
+}
+
+
+@media screen and (max-width: 900px) {
+  .card-body{
+    margin: 5px auto;
+  }
+  .card-image {
+    width: 125px;  /* Smaller width for smaller screens */
+    height: 100px;  /* Smaller height for smaller screens */
+    border-radius: 8px; 
+    margin-left: 18px;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .card-text {
+    font-size: 0.7rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .card-time {
+    font-size: 0.6rem;
+  }
+}
