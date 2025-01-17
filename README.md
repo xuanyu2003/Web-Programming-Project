@@ -7,6 +7,50 @@ During development, the platform can be run locally on localhost to facilitate t
 - `JavaScript`
 - `pgAdmin4`
 - `CSS / SCSS`
+- `HTML`
+- `Hacknplan`
+## 🚦 Running the Project
+To run the project in your local environment, follow these steps:
+
+1. 🧬 Clone the repository
+    ```sh
+    git clone https://github.com/xuanyu2003/Web-Programming-Project.git
+    ```
+2. 📂 Navigate to the project directory and Install required dependencies using 
+    ```sh
+    npm install
+    ```
+    or 
+    ```sh
+    yarn
+    ```
+3. 🔑 Set up the environment variables required for API keys and database configuration.
+4. 🗄️ Initialize the pgAdmin4 database.
+5. 🚀 Run the development server by navigating to the server directory and using 
+    ``` sh
+    npm run devStart
+    ```
+    or 
+    ``` sh
+    yarn dev
+    ```
+   
+6. Run the application using
+    ``` sh
+    npm start
+    ```
+7. Open `http://localhost:3000` to view the application.
+
+## 📃 Display
+homepage
+![image](https://github.com/user-attachments/assets/0c073010-686d-4e7e-9062-249c790b500c)
+postdetailpage
+![image2](https://github.com/user-attachments/assets/d532c8cf-7d57-44ac-977f-e0dd74c4ba61)
+## 📚 Documentation
+database schema
+![bbs_database_schemaV1 1](https://github.com/user-attachments/assets/823dc8c0-c13c-4be8-b23b-f714803e91ba)
+Presentation
+[Presentation_of_GroupB.pdf](https://github.com/user-attachments/files/18458707/Presentation_of_GroupB.pdf)
 ## 🚀 Notice 
 The localhost address is not the original or production address.
 Original address is https://github.com/Sai940214/Sai940214.github.io/tree/main. 
