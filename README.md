@@ -43,9 +43,9 @@ To run the project in your local environment, follow these steps:
 
 ## 📃 Display
 homepage
-![image](https://github.com/user-attachments/assets/0c073010-686d-4e7e-9062-249c790b500c)
+![homepage](https://github.com/user-attachments/assets/71547202-32a5-4fd7-902f-e84838a1ccc1)
 postdetailpage
-![image2](https://github.com/user-attachments/assets/d532c8cf-7d57-44ac-977f-e0dd74c4ba61)
+![postdetailpage](https://github.com/user-attachments/assets/d683300c-480e-49aa-ba11-a0ba0811f645)
 ## 📚 Documentation
 database schema
 ![bbs_database_schemaV1 1](https://github.com/user-attachments/assets/823dc8c0-c13c-4be8-b23b-f714803e91ba)
