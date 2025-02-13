@@ -1,4 +1,4 @@
-﻿# Web-Programming-Project
+# Web-Programming-Project
 ## 📖 Overview
 A social platform where users can create accounts, log in and out, share posts with pictures, and interact with others through comments and likes. The website offers a simple, user-friendly interface with responsive design for mobile and desktop users.
 During development, the platform can be run locally on localhost to facilitate testing and debugging. Developers can access the platform on http://localhost:3000 (or the specified port) for the frontend and http://localhost:3001 for the backend, ensuring smooth iteration and deployment readiness.
@@ -24,8 +24,8 @@ To run the project in your local environment, follow these steps:
     ```sh
     yarn
     ```
-3. 🔑 Set up the environment variables required for API keys and database configuration.
-4. 🗄️ Initialize the pgAdmin4 database.
+3. 🔑 Set up the environment variables required for API keys and database configuration
+4. 🗄️ Initialize the pgAdmin4 database.change database password 
 5. 🚀 Run the development server by navigating to the server directory and using 
     ``` sh
     npm run devStart
@@ -39,7 +39,7 @@ To run the project in your local environment, follow these steps:
     ``` sh
     npm start
     ```
-7. Open `http://localhost:3000` to view the application.
+7. download extension live server to view website 
 
 ## 📃 Display
 homepage
